@@ -121,7 +121,11 @@ Pair * searchMap(HashMap * map,  char * key) {
 // No elimine el par, sólo invalídelo asignando NULL a la clave (pair->key=NULL). 
 // Recuerde actualizar la variable size.
 
-void eraseMap(HashMap * map,  char * key) {    
+void eraseMap(HashMap * map,  char * key) { 
+    Pair* pair = searchMap(map, key);
+    pair-> key = NULL;
+    map->size -= 1;
+    
 
 
 }
