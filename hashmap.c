@@ -97,11 +97,11 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 Pair * searchMap(HashMap * map,  char * key) {   
     long pos = hash(key, map->capacity);
-    if(map->buckets[pos]->key != key)
+    if(strcmp(map->buckets[pos]->key, key) != 0)
     {
         while(map->buckets[pos] != NULL)
             {
-                if(map->buckets[pos]->key == key)
+                if(strcmp(map->buckets[pos]->key, key) == 0)
                 {
                     Pair* pair = createPair(key,map->buckets[pos]->value);
                     return pair;
