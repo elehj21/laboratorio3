@@ -123,9 +123,10 @@ Pair * searchMap(HashMap * map,  char * key) {
 
 void eraseMap(HashMap * map,  char * key) { 
     Pair* pair = searchMap(map, key);
-    pair-> key = NULL;
-    map->size -= 1;
-    
+    if(pair != NULL){
+        pair-> key = NULL;
+        map->size -= 1;
+    }
 
 
 }
