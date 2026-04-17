@@ -136,7 +136,7 @@ void eraseMap(HashMap * map,  char * key) {
 // Recuerde actualizar el índice.
 
 Pair * firstMap(HashMap * map) {
-    for(int i = 0; i < map->capacity 1; i++)
+    for(long i = 0; i < map->capacity; i++)
         {
             if(map->buckets[i] != NULL) 
             {
