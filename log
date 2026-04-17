@@ -13,3 +13,14 @@ Fri Apr 17 12:55:04 AM UTC 2026:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9013e10
+Fri Apr 17 01:12:03 AM UTC 2026: 
+ hashmap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:56:30: error: statement with no effect [-Werror=unused-value]
+   56 |             mapa->buckets[i] == NULL;
+      |                              ^
+cc1: all warnings being treated as errors
+03461ea
