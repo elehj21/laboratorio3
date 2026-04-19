@@ -198,3 +198,8 @@ hashmap.c:184:101: error: invalid type argument of ‘->’ (have ‘Pair’)
   184 |             if(arreglo_viejo[i] !=NULL) insertMap(map, (*arreglo_viejo)[i]->key, (*arreglo_viejo)[i]->value);
       |                                                                                                     ^~
 7eb245a
+Sun Apr 19 04:21:47 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+6ad63f6

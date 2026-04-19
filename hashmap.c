@@ -181,7 +181,7 @@ void enlarge(HashMap * map) {
     map->size = 0;
     for(long i = 0; i < map->capacity; i++)
         {
-            if(arreglo_viejo[i] !=NULL) insertMap(map, (*arreglo_viejo)[i]->key, (*arreglo_viejo)[i]->value);
+            if(arreglo_viejo[i] !=NULL) insertMap(map, arreglo_viejo[i]->key, arreglo_viejo[i]->value);
         }
 }
 
