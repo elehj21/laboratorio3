@@ -174,8 +174,8 @@ Pair * nextMap(HashMap * map) {
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
-    Pair** arreglo_viejo = map->buckets;
-    Pair** arreglo_nuevo = (Pair**)malloc(sizeof(Pair) * map->capacity * 2);
+    Pair* arreglo_viejo = map->buckets;
+    Pair* arreglo_nuevo = (Pair**)malloc(sizeof(Pair) * map->capacity * 2);
     map->buckets = arreglo_nuevo;
     map->capacity = map->capacity * 2;
     map->size = 0;
