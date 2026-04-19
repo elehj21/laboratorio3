@@ -124,3 +124,22 @@ Sun Apr 19 03:45:27 PM UTC 2026:
  tests:  16|1
 total_score: 50/60
 bfee187
+Sun Apr 19 04:04:23 PM UTC 2026: 
+ hashmap.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:184:41: error: implicit declaration of function ‘insert’; did you mean ‘insertMap’? [-Wimplicit-function-declaration]
+  184 |             if(arreglo_viejo[i] !=NULL) insert(map, arreglo_viejo->key, arreglo_viejo->value);
+      |                                         ^~~~~~
+      |                                         insertMap
+hashmap.c:184:66: error: ‘arreglo_viejo’ is a pointer to pointer; did you mean to dereference it before applying ‘->’ to it?
+  184 |             if(arreglo_viejo[i] !=NULL) insert(map, arreglo_viejo->key, arreglo_viejo->value);
+      |                                                                  ^~
+      |                                                     (*           )
+hashmap.c:184:86: error: ‘arreglo_viejo’ is a pointer to pointer; did you mean to dereference it before applying ‘->’ to it?
+  184 |             if(arreglo_viejo[i] !=NULL) insert(map, arreglo_viejo->key, arreglo_viejo->value);
+      |                                                                                      ^~
+      |                                                                         (*           )
+5cab4b0
