@@ -143,3 +143,18 @@ hashmap.c:184:86: error: ‘arreglo_viejo’ is a pointer to pointer; did you me
       |                                                                                      ^~
       |                                                                         (*           )
 5cab4b0
+Sun Apr 19 04:04:41 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:184:69: error: ‘arreglo_viejo’ is a pointer to pointer; did you mean to dereference it before applying ‘->’ to it?
+  184 |             if(arreglo_viejo[i] !=NULL) insertMap(map, arreglo_viejo->key, arreglo_viejo->value);
+      |                                                                     ^~
+      |                                                        (*           )
+hashmap.c:184:89: error: ‘arreglo_viejo’ is a pointer to pointer; did you mean to dereference it before applying ‘->’ to it?
+  184 |             if(arreglo_viejo[i] !=NULL) insertMap(map, arreglo_viejo->key, arreglo_viejo->value);
+      |                                                                                         ^~
+      |                                                                            (*           )
+d32d086
