@@ -185,3 +185,16 @@ Sun Apr 19 04:06:14 PM UTC 2026:
  tests:  16|1
 total_score: 50/60
 cb08ec5
+Sun Apr 19 04:21:01 PM UTC 2026: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:184:75: error: invalid type argument of ‘->’ (have ‘Pair’)
+  184 |             if(arreglo_viejo[i] !=NULL) insertMap(map, (*arreglo_viejo)[i]->key, (*arreglo_viejo)[i]->value);
+      |                                                                           ^~
+hashmap.c:184:101: error: invalid type argument of ‘->’ (have ‘Pair’)
+  184 |             if(arreglo_viejo[i] !=NULL) insertMap(map, (*arreglo_viejo)[i]->key, (*arreglo_viejo)[i]->value);
+      |                                                                                                     ^~
+7eb245a
